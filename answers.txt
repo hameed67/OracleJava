@@ -1,0 +1,8 @@
+﻿a) 3 commits have been added
+b) February ‎25, ‎2016 at 12:03 PM
+c) .gitattributes, README.txt.txt, .classpath, .gitignore, .project, HardwoodSeller.java, WoodItem.java
+d)‎ the files were not modified after being added
+e) git log will show you commit logs in a specific branch, whereas git status shows you your different branches, and how they differ
+f) git log --follow main.java
+g) git log --all --grep='trans-action'
+h) git log --after=01/04/2016 --until 02/16/2016 --author="Lauren"
