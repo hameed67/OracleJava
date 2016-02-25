@@ -3,6 +3,10 @@
  */
 package controller;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 /**
  * @author Esteban
  *
@@ -26,4 +30,10 @@ public class HardwoodSeller {
 		return deliveryETA;
 	}
 	
+	public static void main(String[] args)  throws FileNotFoundException{
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please ensure the text file is in your project folder ");
+		System.out.print("Enter the filename: ");
+		String fileName = sc.nextLine();
+	}
 }
