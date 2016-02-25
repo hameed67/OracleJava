@@ -17,6 +17,13 @@ public class HardwoodSeller {
 	 * @param args
 	 */
 
+	public boolean verifyType(String type){
+		if (!type.equals("Cherry") | !type.equals("Curly Maple") | !type.equals("Genuine Mahogany") | !type.equals("Wenger")
+				| !type.equals("White Oak") | !type.equals("Sawdust")){
+			return false;
+		}
+		return true;
+	}
 	
 	public void readInputFile(String inputFilePath){
 		File file = new File(inputFilePath);
@@ -24,7 +31,7 @@ public class HardwoodSeller {
 		input.useDelimiter(";");
 		String buyer = "";
 		String address ="";
-		
+		String date = "";
 		//	counters for different wood type
 		int cherryCount = 0;
 		int curlyMapleCount = 0;
@@ -34,6 +41,7 @@ public class HardwoodSeller {
 		int sawdustCount = 0;
 		
 		
+	
 		//	run until file is empty
 		while(input.hasNext()){
 			buyer = input.next();
@@ -44,9 +52,16 @@ public class HardwoodSeller {
 		
 		input.nextLine();		
 		
+		String buffer = "";
+		
 		while (input.hasNext()){
+			
 			input.useDelimiter(":");
 			
+			buffer = input.next();
+			if (verifyType(buffer))){
+				
+			}
 			
 		}
 	}
