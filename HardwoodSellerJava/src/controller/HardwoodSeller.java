@@ -21,9 +21,32 @@ public class HardwoodSeller {
 	public void readInputFile(String inputFilePath){
 		File file = new File(inputFilePath);
 		Scanner input = new Scanner(file);
+		input.useDelimiter(";");
+		String buyer = "";
+		String address ="";
+		
+		//	counters for different wood type
+		int cherryCount = 0;
+		int curlyMapleCount = 0;
+		int genuineMahoganyCount = 0;
+		int wengeCount = 0;
+		int whiteOakCount = 0;
+		int sawdustCount = 0;
+		
 		
 		//	run until file is empty
-		while(input.hasNextLine()){
+		while(input.hasNext()){
+			buyer = input.next();
+			address = input.next();
+			date = input.next();
+			System.out.println(buyer + address + date);
+		}
+		
+		input.nextLine();		
+		
+		while (input.hasNext()){
+			input.useDelimiter(":");
+			
 			
 		}
 	}
