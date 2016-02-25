@@ -16,13 +16,16 @@ public class HardwoodSeller {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-	}
 	
 	public void readInputFile(String inputFilePath){
+		File file = new File(inputFilePath);
+		Scanner input = new Scanner(file);
 		
+		//	run until file is empty
+		while(input.hasNextLine()){
+			
+		}
 	}
 	
 	public Double deliveryTime(){
@@ -31,9 +34,10 @@ public class HardwoodSeller {
 	}
 	
 	public static void main(String[] args)  throws FileNotFoundException{
-		Scanner input = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 		System.out.println("Please ensure the text file is in your project folder ");
 		System.out.print("Enter the filename: ");
 		String fileName = sc.nextLine();
+		readInputFile(fileName);
 	}
 }

@@ -42,6 +42,18 @@ public class WoodItem {
 	public String getType() {
 		return type;
 	}
+	
+	/*
+	 * Ensure the type entered by the customer is valid 
+	 * 
+	 */
+	public boolean verifyType(String type){
+		if (!type.equals("Cherry") | !type.equals("Curly Maple") | !type.equals("Genuine Mahogany") | !type.equals("Wenger")
+				| !type.equals("White Oak") | !type.equals("Sawdust")){
+			return false;
+		}
+		return true;
+	}
 
 	/**
 	 * Get the base delivery time
